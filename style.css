@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 11, 57);
+}
+
+header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.header-btn {
+    display: none;
+}
+.hamburger-line {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+
+.logo-box {
+    /* border: 1px solid red; */
+    width: 200px;
+  
+} 
+
+.logo {
+    height: 50px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+}
+
+
+.span-text {
+    color: yellow;
+    font-weight: 800;
+}
+
+nav {
+    /* border: 1px solid yellow; */
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-item {
+    /* border: 1px solid white; */
+    margin-right: 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav-item:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+.hero {
+    /* border: 1px solid white; */
+    display: flex;
+    padding-top: 80px;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-text {
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.hero-span {
+    color: yellow;
+}
+
+.left-section {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin-left: 80px;
+}
+
+.right-section {
+    /* border: 1px solid orange; */
+    width: 50%;
+    margin-right: 80px;
+}
+
+.gallery {
+    border: 1px solid white;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-img {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* STYLING FOR SERVICES PAGE */
+.services-container {
+    background-color: white;
+}
+
+.top-section {
+    text-align: center;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 0;
+}
+
+.bottom-section {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.services-card {
+    width: 30%;
+    height: 450px;
+    /* ;border: 1px solid blue */
+    text-align: center;
+    box-shadow: 5px 10px 8px rgb(161, 145, 145)
+}
+
+.service-card-img {
+    width: 100%;
+    height: 250px;
+}
+
+.read-more {
+    text-decoration: none;
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.read-more:hover {
+    background-color: orangered;
+    color: azure;
+}
+
+.footer-text{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+/* responsiveness for service page */
+@media screen and (max-width: 320px) {
+    
+    header {
+        margin: 20px;
+        padding: 0 10px;
+    }
+    .header-btn {
+        display: block;
+    }
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-card{
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav{
+        display: none;
+    }
+    .logo {
+        height: 40px;
+    }
+    .logo-text{
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+
+
+    @media screen and(max-width:425px){
+
+        header {
+            margin:20px 0;
+            padding:0 10px;
+        }
+        nav {
+            display: none;
+        }
+
+        .header-btn{
+            display: block;
+        }
+        .bottom-section{
+            display: flex;
+            flex-direction: column;
+        }
+        .services-card {
+            width: 90%;
+            margin: 60px auto;
+        }
+    }
+
+    @media screen and (min-width:768px){
+        header {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 0 80;
+        }
+    }
+/* about page styling */
+
+.about-container{
+    /* border: 1px solid white; */
+    display: flex;
+    padding-top: 40px;
+}
+.about-left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+
+}
+.about-heading{
+    font-size: 70px;
+    color: white;
+}
+.about-text {
+    color: white;
+    font-size: 25px;
+}
+.about-right-section{
+    width: 60%;
+    padding-left: 20px;
+}
+.About-img {
+    width: 100%;
+}
